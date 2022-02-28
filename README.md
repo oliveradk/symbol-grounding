@@ -5,7 +5,7 @@ An empirical demonstration of a discontinuous performance increase via learned s
 ![plot](Arrows_Transfer_Results.png)
 
 # Installation
-
+Clone `symbol-grounding` anywhere you like
 ### Dependencies
 
 ```angular2html
