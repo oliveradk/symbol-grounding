@@ -14,7 +14,7 @@ agent trained on the new environment, and a randomly initialized agent learning 
 ![plot](assets/Arrows_Transfer_Results.png)
 
 # Installation
-
+Clone `symbol-grounding` anywhere you like
 ### Dependencies
 
 ```angular2html
