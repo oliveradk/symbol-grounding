@@ -33,7 +33,7 @@ and `--tranfer_steps` arguments:
 python main.py --pretrain_steps 1000000 --transfer_steps 300000
 ```
 
-###Train individual components
+### Train individual components
 To train models individually (and analyze the results) use the following scripts:
 <l>
 - `train_lava.py`
