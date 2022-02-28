@@ -1,8 +1,17 @@
 # symbol-grounding
 An empirical demonstration of a discontinuous performance increase via learned symbol grounding
 
+An RL agent is trained (via PPO) to avoid lava obstacles and reach a goal. 
+The agent is then transferred to a new environment, where the location of lava obstacles
+are indicated by colored arrows. A supervised translator is trained to predict lava locations from arrow environmental 
+observations. Performance is compared amoung the frozen pretrained agent with accessed to the translator, the pretrained
+agent trained on the new environment, and a randomly initialized agent learning the new environment from scratch.
+
+<img src="assets/lava.png" alt="lava" width="300"/>
+<img src="assets/arrows.png" alt="arrow" width="300"/>
+
 ### Results
-![plot](Arrows_Transfer_Results.png)
+![plot](assets/Arrows_Transfer_Results.png)
 
 # Installation
 
