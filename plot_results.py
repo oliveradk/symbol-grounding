@@ -1,16 +1,20 @@
 import os
 import argparse
 import matplotlib.pyplot as plt
-from stable_baselines3.common import results_plotter
 from config import LOG_DIR
+
+from stable_baselines3.common.results_plotter import X_TIMESTEPS
+
+from utils.plot_utils import plot_results_modified
 
 
 def plot_results(dirs=["ppo_arrows", "ppo_arrows_transfer", "ppo_arrows_translated"], time_steps=1e5,
-                 title="Arrows Transfer Results"):
+                 title="Arrows Transfer Results", show_points=False):
     parent = os.path.join(os.path.dirname(__file__), LOG_DIR)
-    dirs = [os.path.join(parent, d) for d in dirs]
-    results_plotter.plot_results(dirs, time_steps, results_plotter.X_TIMESTEPS, title)
+    root_dirs = [os.path.join(parent, d) for d in dirs]
+    plot_results_modified(root_dirs, time_steps, X_TIMESTEPS, title, labels=dirs, show_points=show_points)
     plt.show()
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
