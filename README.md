@@ -7,8 +7,7 @@ are indicated by colored arrows. A supervised translator is trained to predict l
 observations. Performance is compared amoung the frozen pretrained agent with accessed to the translator, the pretrained
 agent trained on the new environment, and a randomly initialized agent learning the new environment from scratch.
 
-<img src="assets/lava.png" alt="lava" width="300"/>
-<img src="assets/arrows.png" alt="arrow" width="300"/>
+<img src="assets/lava_to_arrow.png" alt="arrow" width="800"/>
 
 ### Results
 ![plot](assets/Arrows_Transfer_Results.png)
